@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Vollkorn", serif;
@@ -267,8 +268,20 @@ body {
   border-radius: 5px;
   border: none;
 }
-.text-sub .hide-text:focus::placeholder {
-  transition: opacity 0.3s ease-in-out;
+.text-sub .hide-text:focus::-webkit-input-placeholder {
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  opacity: 0;
+}
+.text-sub .hide-text:focus::-moz-placeholder {
+  opacity: 0;
+}
+.text-sub .hide-text:focus::-ms-placeholder {
+  opacity: 0;
+}
+.text-sub .hide-text:focus::-moz-placeholder {
   opacity: 0;
 }
 /* End subscrib */
