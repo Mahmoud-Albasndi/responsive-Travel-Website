@@ -40,7 +40,6 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--black);
 }
-
 .yallow {
   color: var(--min-yallow);
 }
@@ -221,6 +220,7 @@ body {
 @media (max-width: 768px) {
   .book-trip .card-body .rom-trip {
     left: 35%;
+    width: 220px;
   }
 }
 .book-trip .card-body .rom-trip:hover {
@@ -260,19 +260,24 @@ body {
   border-radius: 1rem;
   border-top-left-radius: 110px;
 }
-.subscrib .container .text-sub input {
+.text-sub .hide-text {
   outline: none;
+  width: 100%;
+  padding: 8px 50px;
+  border-radius: 5px;
   border: none;
+}
+.text-sub .hide-text:focus::placeholder {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
 }
 /* End subscrib */
 /* Start Logos */
-/* Start Logos */
 .logos img:hover {
-  box-shadow: rgb(149 157 165 / 20%) 16px 20px 20px 0px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
 }
-/* End footer */
+/* End Logos */
+/* Start footer */
 footer .container ul li {
   margin-top: 10px;
 }
